@@ -4,9 +4,8 @@
 }
 
 #color-palette {
-  display: inline;
-  height: auto;   
-  width: auto;
+  display: flex;
+  margin-bottom: 5px;
 }
 
 #color-one {
@@ -27,9 +26,11 @@
 
 #pixel-board {
   display: inline;
-  height: auto;   
+  height: auto; 
+  padding: 5px;  
   width: auto;
 }
+
 .color {
   border-color: black;  
   border-width: 1px;
@@ -37,11 +38,6 @@
   height: 40px;
   width: 40px;
   display: inline-block;
-}
-
-.selected {
-  border-width: 5px;
-  border-color: rgb(128, 128, 128);
 }
 
 .pixel {
@@ -53,4 +49,3 @@
   width: 40px;
   display: inline-block;
 }
-
