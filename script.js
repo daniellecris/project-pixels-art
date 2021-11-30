@@ -35,16 +35,16 @@ fourColor.addEventListener('click', addClass);
 
 let corSelect = document.querySelector('.selected').style.background;//guarda a cor selecionada
 
-//passar por quadro de pixels
 const pixels = document.querySelectorAll('.pixel');
-
-for (let index = 0; index < pixels.length; index += 1) {
-  pixels[index].addEventListener('click', preencheBox());
-}
 
 // Clicar na cor escolhida e preencher quadro
 function preencheBox(corSelect) {
-  pixels.style.background = corSelect;
+  pixels[index].style.background = corSelect;
+}
+
+//passar por quadro de pixels
+for (let index = 0; index < pixels.length; index += 1) {
+  pixels[index].addEventListener('click', preencheBox(corSelect));
 }
 
 //Limpar Pixels
@@ -52,8 +52,8 @@ let btnLimpar = document.getElementById('clear-board');
 btnLimpar.addEventListener('click', clear);
 
 function clear() {
-  for (let index = 0; index <= 25; index+=1) {
-    let pixelClear = document.querySelectorAll('.pixel')[index];
-    pixelClear.style.background = "white";
+  for (let index = 0; index <= pixels.length; index+=1) {
+    //let pixelClear = document.querySelectorAll('.pixel')[index];
+    pixels[index].style.background = 'white';
   }
 }
