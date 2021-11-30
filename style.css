@@ -39,6 +39,11 @@
   display: inline-block;
 }
 
+.selected {
+  border-width: 5px;
+  border-color: rgb(128, 128, 128);
+}
+
 .pixel {
   background-color: white;
   border-color: black;  

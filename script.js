@@ -1,17 +1,17 @@
-const pixelBoard = document.getElementById('pixel-board');
+// const pixelBoard = document.getElementById('pixel-board');
 
-let row = 5;
-let columns = 5;
+// const row = 5;
+// const columns = 5;
 
-for (let index = 0; index < row; index++) {
-  const pixelLinha = document.createElement('div');
-  for (let i = 0; i < columns; i++) {
-    const box = document.createElement('div');
-    box.className = 'pixel';
-    pixelLinha.appendChild(box);
-  }
-  pixelBoard.appendChild(pixelLinha);
-}
+// for (let index = 0; index < row; index += 1) {
+//   const pixelLinha = document.createElement('div');
+//   for (let i = 0; i < columns; i += 1) {
+//     const box = document.createElement('div');
+//     box.className = 'pixel';
+//     pixelLinha.appendChild(box);
+//   }
+//   pixelBoard.appendChild(pixelLinha);
+// }
 
 //const inicialCor = document.getElementById('color-one');
 //inicialCor.classList.add('selected');
