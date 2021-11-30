@@ -1,0 +1,51 @@
+#title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: blue;  
+}
+
+#color-palette {
+  display: inline;
+  height: auto;   
+  width: auto;
+}
+
+#color-one {
+  background-color: black;
+}
+
+#color-two {
+  background-color: red;
+}
+
+#color-three{
+  background-color: green;
+}
+
+#color-four {
+  background-color: blue;
+}
+
+#pixel-board {
+  display: inline;
+  height: auto;   
+  width: auto;
+}
+.color {
+  border-color: black;  
+  border-width: 1px;
+  border-style: solid;    
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+
+.pixel {
+  background-color: white;
+  border-color: black;  
+  border-width: 1px;
+  border-style: solid;    
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+
