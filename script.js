@@ -9,6 +9,7 @@ for (let index = 1; index <= row; index += 1) {
   const pixelLinha = document.createElement('div');
   for (let i = 0; i < columns; i += 1) {
     const box = document.createElement('div');
+    box.addEventListener('click', preencheBox);
     box.className = 'pixel';
     pixelLinha.appendChild(box);
   }
@@ -26,14 +27,12 @@ function addClass(event) {
   event.target.classList.add('selected'); 
 }
 
-let corSelect = document.querySelector('.selected').style.backgroundColor;//guarda a cor selecionada
-
 const pixels = document.querySelectorAll('.pixel');
-console.log(corSelect)
 
 // Clicar na cor escolhida e preencher quadro
-function preencheBox(corSelect) {
-   pixels[index].style.background = corSelect;
+function preencheBox(event) {
+  let corSelect = document.querySelector('.selected').style.backgroundColor;//guarda a cor selecionada
+  event.target.style.backgroundColor = corSelect;
 }
 
 // //passar por quadro de pixels
