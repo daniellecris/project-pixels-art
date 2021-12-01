@@ -8,22 +8,6 @@
   margin-bottom: 5px;
 }
 
-#color-one {
-  background-color: black;
-}
-
-#color-two {
-  background-color: red;
-}
-
-#color-three{
-  background-color: green;
-}
-
-#color-four {
-  background-color: blue;
-}
-
 #pixel-board {
   display: inline;
   height: auto; 
